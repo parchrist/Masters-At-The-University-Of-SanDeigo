@@ -4,6 +4,7 @@
 
 This Repo is all of my course work for my Masters of Applied Artificial Intelligence at the Univeristy of SanDiego 
 
+## Every File Will contain the following for every single class 
 Each File upload will contain the following
 1. `Assignments`- Weekly homework assigned
 2. `Discussion posts` - Just my response to the discussion board of the week, does not include the question being asked. It is just my response
