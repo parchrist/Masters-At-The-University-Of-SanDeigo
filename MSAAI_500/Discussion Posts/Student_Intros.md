@@ -1,0 +1,5 @@
+Hello Class, 
+
+My name is Parker Christenson, I am Located out of Arizona, which is on Moutian standard time. I just finished my Bachelors from ASU. I currently work as data analsyst creating dashboards and some ADHOC reports. My study plan is just the same as it was at ASU when I was a full time Student and working, which is just before work, after work and on the weekends. I have been using the note taking app called obsidian, which is a markdown editor. I have been using it for a few months now and I really like it because you can link certain concepts together off of one or two words. As far as my personal intrests go, if I am not studying or I am not working, I am usually finishing up personal projects or I am skiing in the winter time. 
+
+I am looking forward to working with you all this semester!!
