@@ -21,7 +21,7 @@ Each File upload will contain the following
 #### MSAAI 501 - `From Pixels to Sharpies: Evaluating MNIST Models Against Real Handwritten Digits`
 - Analyzed the MNIST data set 70,000 images from the NIST Machine Learning Repo
 - EDA of the Data Using a Uniform Manifold Project plots to see the way the data was shaped, and to get a feel for the way that the models would have a hard time processing and predicting
-- Used a total of 4 model architectures, KVM, K-neighbors, CNN and MLP Neural Networks
+- Used a total of 4 model architectures, SVM, K-neighbors, CNN and MLP Neural Networks
 - Full optimized every single Neural Network model, by expanding the width of the layer, or by adding additional layers. 
 - Tested our own handwritten digits two ways, hand-drawn and a HTML draw box
 - Full critique on the MNIST data set, explaining that the data set is just a training and first project data set, and could not be used for any real-world application without extensive image pre-processing.
