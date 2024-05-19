@@ -25,4 +25,9 @@ Each File upload will contain the following
 - Full optimized every single Neural Network model, by expanding the width of the layer, or by adding additional layers. 
 - Tested our own handwritten digits two ways, hand-drawn and a HTML draw box
 - Full critique on the MNIST data set, explaining that the data set is just a training and first project data set, and could not be used for any real-world application without extensive image pre-processing.
- 
+
+#### MSAAI 530 - `Data analytics and the Internet of Things`
+- Analyzed the data set from a real IOT device that was collecting data from a real-world device
+- The goal of the project was to predict the temperature of the device based on the other variables in the data set, and see if someone was present in the rooom. 
+- Though our EDA we were able to see that the data was from an office building, and we were also able to detect when someone would be in the room based off the time. 
+- We created a Tableau dashboard to show the data in a more visual way, and to show the data in a way that was more understandable to the average person, and show it to stakeholders. 
