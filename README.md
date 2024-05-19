@@ -31,3 +31,8 @@ Each File upload will contain the following
 - The goal of the project was to predict the temperature of the device based on the other variables in the data set, and see if someone was present in the rooom. 
 - Though our EDA we were able to see that the data was from an office building, and we were also able to detect when someone would be in the room based off the time. 
 - We created a Tableau dashboard to show the data in a more visual way, and to show the data in a way that was more understandable to the average person, and show it to stakeholders. 
+
+#### MSAAI 531 - `AI Ethics & Society`
+- This class was a 6 week long group project that had deliverables every week, that all had to be submitted by the final group. 
+- The project was based off of templates that the instructure had developed, that we had to fill out in order to build the final project. 
+- The final was all of the documents that we had created, and a final presentation that we had to film, and upload for the class to be able to view. 
