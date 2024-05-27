@@ -1,0 +1,15 @@
+In a real world situation, I would honestly pick the really great data set over a really great model. Over the two years I have been building machine learning models, I think that the best models I have built have been some of the most simple but yet great quality datasets. In my work life, if you query junk data from the server you are really going to have a hard time painting the picture between your data. I would like to believe that the same goes for ML models and Neural networks. I think that when making machine learning models that the if the data is really good, and the data has a target variable in that is clear, and can be correlated loosely with other variables, then the machine learning model will be pretty good. 
+
+ 
+
+The reason we have multiple types of algorithms in my eyes is because there are lots use cases that are targeting a specific kind of prediction. For instance, LLM's are trying to predict what the text input is asking, classification models are trying to predict the category an event/thing will end up in, and decision tree models are essentially a massive chain of 'IF' statements. These models can fit into business need or the model of the underlying statement. The Machine learning Engineers Job is to pick the best model that fits the data. A really good example of this is if the data set is structured/queried, as gradient boost model would fit this data the best, and Netflix actually uses this model however, they have not publicly disclosed this information and use more than one algorithm. I think that there are lots of models out there because they are able to solve problems but, is there are real need for all of the models, I am not 100% sure. 
+
+ 
+
+References
+
+Chong, D. (2021, December 14). Deep Dive into Netflix’s Recommender System - Towards Data Science. Medium. https://towardsdatascience.com/deep-dive-into-netflixs-recommender-system-341806ae3b48
+
+How Netflix’s recommendations system works. (n.d.). Help Center. https://help.netflix.com/en/node/100639
+
+Saini, A. (2024, January 10). Gradient Boosting Algorithm: A complete guide for beginners. Analytics Vidhya. https://www.analyticsvidhya.com/blog/2021/09/gradient-boosting-algorithm-a-complete-guide-for-beginners/#:~:text=When%20the%20target%20column%20is,weak%20learners%20using%20gradient%20descent.
