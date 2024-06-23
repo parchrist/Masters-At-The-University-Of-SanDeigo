@@ -1,0 +1,10 @@
+I think that there are a number of things that helped with the large adoption of LLMs in society. One of them is RLHF for the tuning of the responses, to be catered towards more human like conversations. When considering that RLHF played an important role in the development of the style of the responses, I don't actually think that it was the most critical thing when the model was deployed. I think that the immense knowledge of the model was the most important and what made people gravitate to it. According to multiple online sources, and Sam Altman himself, GPT-3 which was the first success of the GPT iterations had  175 billion parameters (Karhade, 2023). In my eyes parameters don't really mean all that much, when the content that it produces is not accurate. The GPT 2 model have been around since February 2019 but, not to many people heard of open AI until GPT-3 which came out in June of 2020. I think that at the end of the day, users of the LLMs and generative models, are looking for an experience that will elevate the need of looking in multiple places for an answer to complex tasks, and the RLHF is a key part in aiding the output of the model.  
+
+ 
+
+References 
+
+ 
+
+Karhade, M., MD PhD. (2023, August 9). What is GPT-4 (and When?) - Towards AI. Medium. https://pub.towardsai.net/what-is-gpt-4-and-when-9f5073f25a6dLinks to an external site. 
+

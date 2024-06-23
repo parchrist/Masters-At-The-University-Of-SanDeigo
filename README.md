@@ -36,3 +36,9 @@ Each File upload will contain the following
 - This class was a 6 week long group project that had deliverables every week, that all had to be submitted by the final group. 
 - The project was based off of templates that the instructure had developed, that we had to fill out in order to build the final project. 
 - The final was all of the documents that we had created, and a final presentation that we had to film, and upload for the class to be able to view. 
+
+#### MSAAI 510 - `Machine Learning: Fundamentals and Applications`
+- We analyzed No show appointments in Brazil, and attempted to predict if a patient would show up to their appointment based on the data that was given. 
+- Doing this we utilized multiple models, but the best model we had was the support vetcor machine. This model was able to predict with a 79% accuracy if a patient would show up to their appointment.
+- This model worked for our needs because it is able to handle null data very well, and once we start adding features to the model, we will more than likely have null values, especially in the medical field, were not all data is collected due to hippa laws. 
+- We also layed out a full potential data pipeline that we can test on, send precitions to back end tables, and then have the front end display the data in a way that is understandable to the user in PowerBI.
