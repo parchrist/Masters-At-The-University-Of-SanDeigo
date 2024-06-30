@@ -10,6 +10,9 @@ Each File upload will contain the following
 2. `Discussion posts` - Just my response to the discussion board of the week, does not include the question being asked. It is just my response
 3. `Group Project` - These are the Final Projects in the course. We do not have finals but, the group project is supposed to replicate some of the projects we would deal with in the real world.
 
+
+___
+
 ## Group Projects Descriptions 
 
 #### MSAAI 500- `US Automobile Accident Severity Prediction`
@@ -42,3 +45,8 @@ Each File upload will contain the following
 - Doing this we utilized multiple models, but the best model we had was the support vetcor machine. This model was able to predict with a 79% accuracy if a patient would show up to their appointment.
 - This model worked for our needs because it is able to handle null data very well, and once we start adding features to the model, we will more than likely have null values, especially in the medical field, were not all data is collected due to hippa laws. 
 - We also layed out a full potential data pipeline that we can test on, send precitions to back end tables, and then have the front end display the data in a way that is understandable to the user in PowerBI.
+
+#### MSAAI 511 - `Neural Networks and Deep Learning`
+-
+-
+-
