@@ -7754,6 +7754,32 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">'Class'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([0, 1], dtype=int64)</pre>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7782,7 +7808,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Train-test split</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># making the testing split</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">normalized_features</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7797,7 +7823,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create a PyTorch Dataset</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># pytorch dataset</span>
 <span class="k">class</span> <span class="nc">FraudDataset</span><span class="p">(</span><span class="n">Dataset</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
@@ -7879,7 +7905,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># encoding dim can be adusted to get better results</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># setting input and encoding dim's and setting model type</span>
 <span class="n">input_dim</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">encoding_dim</span> <span class="o">=</span> <span class="mi">16</span> 
 <span class="n">model</span> <span class="o">=</span> <span class="n">Autoencoder</span><span class="p">(</span><span class="n">input_dim</span><span class="p">,</span> <span class="n">encoding_dim</span><span class="p">)</span>
@@ -7896,7 +7922,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">MSELoss</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># setting loss function and optimizer</span>
+<span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">MSELoss</span><span class="p">()</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7911,7 +7938,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">num_epochs</span> <span class="o">=</span> <span class="mi">50</span>  <span class="c1"># Adjust the number of epochs as needed</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># training the model</span>
+<span class="n">num_epochs</span> <span class="o">=</span> <span class="mi">50</span> 
 <span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_epochs</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">data</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">train_loader</span><span class="p">:</span>
         <span class="n">output</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -7996,7 +8024,8 @@ Epoch [50/50], Loss: 0.5368
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_reconstruction_errors</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">loader</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># getting the reconstruction errors</span>
+<span class="k">def</span> <span class="nf">get_reconstruction_errors</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">loader</span><span class="p">):</span>
     <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
     <span class="n">errors</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
@@ -8018,7 +8047,8 @@ Epoch [50/50], Loss: 0.5368
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">train_errors</span> <span class="o">=</span> <span class="n">get_reconstruction_errors</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># training and testing errors as vars </span>
+<span class="n">train_errors</span> <span class="o">=</span> <span class="n">get_reconstruction_errors</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">)</span>
 <span class="n">test_errors</span> <span class="o">=</span> <span class="n">get_reconstruction_errors</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">test_loader</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8033,7 +8063,7 @@ Epoch [50/50], Loss: 0.5368
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Determine a threshold for anomalies</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># setting threshold for anomaly</span>
 <span class="n">threshold</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">train_errors</span><span class="p">,</span> <span class="mi">95</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8048,7 +8078,8 @@ Epoch [50/50], Loss: 0.5368
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">test_anomalies</span> <span class="o">=</span> <span class="n">test_errors</span> <span class="o">&gt;</span> <span class="n">threshold</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># calculating the accuracy</span>
+<span class="n">test_anomalies</span> <span class="o">=</span> <span class="n">test_errors</span> <span class="o">&gt;</span> <span class="n">threshold</span>
 <span class="n">y_test_numpy</span> <span class="o">=</span> <span class="n">y_test</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
 <span class="n">accuracy</span> <span class="o">=</span> <span class="p">(</span><span class="n">test_anomalies</span> <span class="o">==</span> <span class="n">y_test_numpy</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 
@@ -8079,23 +8110,16 @@ Epoch [50/50], Loss: 0.5368
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate the reconstruction errors for the training and test sets</span>
-<span class="n">train_errors</span> <span class="o">=</span> <span class="n">get_reconstruction_errors</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">)</span>
-<span class="n">test_errors</span> <span class="o">=</span> <span class="n">get_reconstruction_errors</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">test_loader</span><span class="p">)</span>
-
-<span class="c1"># Determine a threshold for anomalies (95th percentile of training errors)</span>
-<span class="n">threshold</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">train_errors</span><span class="p">,</span> <span class="mi">95</span><span class="p">)</span>
-
-<span class="c1"># Identify anomalies in the test set</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># id anomalies in the test set</span>
 <span class="n">test_anomalies</span> <span class="o">=</span> <span class="n">test_errors</span> <span class="o">&gt;</span> <span class="n">threshold</span>
 
-<span class="c1"># Convert boolean test anomalies to integers (1 for anomaly, 0 for normal)</span>
+<span class="c1"># convert boolean test anomalies to integers (1 for anomaly, 0 for normal)</span>
 <span class="n">test_anomalies</span> <span class="o">=</span> <span class="n">test_anomalies</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 
-<span class="c1"># Ground truth labels for the test set</span>
+<span class="c1"># labels for the test set</span>
 <span class="n">y_test_numpy</span> <span class="o">=</span> <span class="n">y_test</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
 
-<span class="c1"># Calculate the metrics</span>
+<span class="c1"># calc the metrics</span>
 <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test_numpy</span><span class="p">,</span> <span class="n">test_anomalies</span><span class="p">)</span>
 <span class="n">precision</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_test_numpy</span><span class="p">,</span> <span class="n">test_anomalies</span><span class="p">)</span>
 <span class="n">recall</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test_numpy</span><span class="p">,</span> <span class="n">test_anomalies</span><span class="p">)</span>
