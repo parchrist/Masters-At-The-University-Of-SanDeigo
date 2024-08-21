@@ -47,6 +47,6 @@ ___
 - We also layed out a full potential data pipeline that we can test on, send precitions to back end tables, and then have the front end display the data in a way that is understandable to the user in PowerBI.
 
 #### MSAAI 511 - `Neural Networks and Deep Learning`
--
--
--
+- We analyzed the MIDI data set, that was made up of four composers, Chopin, Bach, Beethoven, and Mozart each has 250 songs to 1250 songs for each composer. 
+- We used multiple models to attempt to predict the model, and we ended up with a high accuracy of 86% with the model. 
+- We wanted to be able to use the piano roll to predict the composer, but we were not able to get the model to work with the piano roll due to the memory usage on our machines, maxing out at 64gb of ram. 
