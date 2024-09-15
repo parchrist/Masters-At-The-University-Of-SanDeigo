@@ -1,0 +1,5 @@
+Hello class! 
+
+My name is Parker Christenson, and I am currently a Data Analyst/Bi Analyst at a Healthcare companny based out of Ohio. I am excited to be taking this course and learning more about AI and Machine Learning in relation to LLM's and NLP. I find LLM's to be fascinating due to their ability to predict with a human like response through the use of prompt engineering. I am also looking forward to learning more about how to use NLP models in the healthcare setting to improve the quality of care for patients in any health care setting. 
+
+I think that the signifcance of LLM's and NLP's is the ability to take spoken words or written text and turn it into meaningful output that humans are able to understand. For instance, using NLP to identify key words in a patient's medical record to help identify potential health risks, or tendencies that a patient may have, without the need for the staff to look back through client charts is something that is impactful for time reasons and quality of service. 
